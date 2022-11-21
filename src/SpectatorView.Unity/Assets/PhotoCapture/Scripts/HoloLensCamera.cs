@@ -880,7 +880,9 @@ namespace Microsoft.MixedReality.PhotoCapture
 #if CAN_USE_UNITY_TYPES && UNITY_WSA && CAN_USE_UWP_TYPES
 
 #if UNITY_2020_2_OR_NEWER
-            rootCoordinateSystem = WMCoordinateSystem.GetInstance() as SpatialCoordinateSystem;
+
+            // TODO: Get the root coordinate system from OpenXR
+            // rootCoordinateSystem = WMCoordinateSystem.GetInstance() as SpatialCoordinateSystem;
 #else
             IntPtr coordinateSystemPtr;
             // this must be done from the main thread, so done in 

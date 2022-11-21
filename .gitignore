@@ -1,2 +1,10 @@
 *.log
 packages/
+src/SpectatorView.Unity/Library/
+*.csproj
+src/SpectatorView.Unity/.vs/
+src/SpectatorView.Unity/.vsconfig
+*.sln
+src/SpectatorView.Unity/UserSettings/
+src/SpectatorView.Unity/obj/
+samples/Build2019Demo.Unity/UserSettings/

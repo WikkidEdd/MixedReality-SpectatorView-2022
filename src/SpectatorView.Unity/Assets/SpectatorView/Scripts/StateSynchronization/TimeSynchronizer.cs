@@ -7,12 +7,10 @@ namespace Microsoft.MixedReality.SpectatorView
 {
     internal class TimeSynchronizer : Singleton<TimeSynchronizer>
     {
-        [SerializeField]
-        private CompositionManager compositionManager = null;
 
         public float GetHologramTime()
         {
-            return (compositionManager != null) ? compositionManager.GetHologramTime() : Time.time;
+            return Time.time;
         }
     }
 }
